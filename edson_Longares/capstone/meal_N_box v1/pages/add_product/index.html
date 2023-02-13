@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet">
+    <!--for tiny slider from cdnjs.com-->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body onload="getProdID()">
+
+    <div class="reg-container">
+        <div class="subRegContainer">
+            <div class="infoContainer">
+
+                <h2><b>PRODUCT REGISTRATION</b></h2>
+                <br />
+                <hr>
+                <br />
+                <form id="addProduct-Form" >
+                    <table>
+                        <tr>
+                            <td><label for="vendorID">Vendor ID:</label></td>
+                            <td><input class="inactive-inputBox" type="text" id="vendorID" disabled></input></td>
+                        </tr>
+                        <tr>
+                            <td><label for="productCode">Product Code:</label></td>
+                            <td><input class="inactive-inputBox" type="text" id="productCode" disabled></input></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputProdName">Product Name</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputProdName" placeholder="Product Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputProdPrice">Price:</label></td>
+                            <td><input type="number" class="form-control inputBox" id="inputProdPrice"
+                                    placeholder="Price"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uploadPic">Pruduct Image:</label></td>
+                            <td><input type="file" class="form-control" id="uploadPic" name="file"
+                                    accept ="image/*" placeholder="Upload Photo" onchange="uploadImage()"></td>
+                        </tr>
+                        <tr>
+                            <td><label> <b>Menu Category: </b></label></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategA" value="false"></td>
+                            <td><label for="menuCategA">Breakfast</label><br></td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategB" value="false"></td>
+                            <td><label for="menuCategB">Lunch</label><br></td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategC" value="false"></td>
+                            <td><label for="menuCategC">Dinner</label><br></td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategD" value="false"></td>
+                            <td><label for="menuCategD">Snacks</label><br></td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategE" value="false"></td>
+                            <td><label for="menuCategE">Desserts</label><br></td>
+                        </tr>
+                    </table>
+                    <br />
+                    <hr>
+                    <br />
+                    <button type="button" class="btnSubmit" onclick="addProduct()">SUBMIT</button>
+                    <button type="button" class="btnSubmit" onclick="window.location.href='../../dashboard/vendors/';">
+                        CLOSE
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<!--for the tiny slider cdnjs.com-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>

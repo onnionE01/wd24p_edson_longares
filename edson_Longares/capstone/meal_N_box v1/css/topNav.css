@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --spacer: 2rem;
+    --inputBg: #adede5;
+}
+
+/* .myMain-Container{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+} */
+
+.topHeader{
+    display:flex;
+    top: 0;
+    background: #adede5;
+    position: fixed;
+    width:1000px;
+    min-height: 70px;
+    justify-content: right;
+    align-items: right;
+    gap:var(--spacer);
+    z-index: 2;
+}
+
+@media(max-width:1600px) {
+    .topNav {
+        width: 100%;
+    }
+}
