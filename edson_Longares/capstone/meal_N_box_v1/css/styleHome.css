@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.featureMeal{
+    margin-top: 100px;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.hText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.myfooter {
+    background-color: #41b3a3;
+    height: 50px;
+    padding: 5px;
+    align-content: flex-end;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(24, 23, 23);
+}
+
+.divfooter {
+    background-color: #41b3a3;
+    width: 200px;
+    float: right;
+}

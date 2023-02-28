@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+}
+
+:root {
+    /*  ======color======  */
+
+    --color-body: #E4E9F7;
+    --color-side: #FFF;
+    --color-prime: #66FCF1;
+    --color-light: #F6F5FF;
+    --color-toggle: #DDD;
+    --color-text: #021c1a;
+    --color-back: #9eede9;
+    --color-sub: #9eede96f;
+
+
+    /* =====transition====== */
+    --trans-02: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+
+    --spacer: 2rem;
+    --inputBg: #adede5;
+
+}
+
+
+body {
+    background-color: rgb(226, 245, 241);
+}
+
+.reg-container {
+    width: 1600px;
+    margin: auto;
+}
+
+.subRegContainer {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 10px;
+    background-color: transparent;
+    background-image: url("../../photos/misc/background_signup.png"); 
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size:contain;
+}
+
+.infoContainer {
+    width: 60%;
+    height: auto;
+    margin: 10px;
+    background-color: #a1d8dcb2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1f2833;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 5px #bbb;
+    justify-content: center;
+}
+
+.btnSubmit {
+    background-color: #a1d8dc;
+    width: 40%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #0B0C10;
+    color: #0B0C10;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+
+
+.btnSubmit:hover {
+    background-color: #0B0C10;
+    color: #66FCF1;
+}
+
+
+.inputBox {
+    border: 0;
+    background-color: #d1f3f0;
+    width: 150%;
+    height: 30px;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.inactive-inputBox {
+    font-weight: bold;
+    border: 0;
+    background-color: #aba2a5;
+    width: 150%;
+    height: 30px;
+    color:  #f35893;
+    border-radius: 3px;
+}
+
+.categoryCheckbox{
+    text-align: right;
+}
+
+.categoryInputBox{
+    width: 1rem;
+    height: 1rem;
+    background-color: #a1d8dc;
+    border-radius: 2px;
+    border: 1px solid #0B0C10 ;
+    box-shadow: #bbb;
+}
+
+.mealonTray{
+    border: 1px solid var(--color-back);
+    box-shadow: #1f2833;
+    background-color:var(--color-sub);
+}
+
+.mealonTray .addMinus-Qty{
+    width: 40px;
+}
+
+.product-img{
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* add minus */
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+input.qtyplus { width:30px; height:40px;}
+input.qtyminus { width:30px; height:40px;}
+
+
+
+@media(max-width:1600px) {
+    .container {
+        width: 100%;
+    }
+}

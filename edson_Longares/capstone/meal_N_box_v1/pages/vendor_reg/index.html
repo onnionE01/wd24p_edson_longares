@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="../../photos/misc/my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body onload="getVendorID()">
+
+    <div class="reg-container">
+        <div class="subRegContainer">
+            <div class="infoContainer">
+
+                <h2><b>SELLER REGISTRATION</b></h2>
+                <br />
+                <hr>
+                <br />
+                <form id="vendorReg-Form">
+                    <table>
+                        <tr>
+                            <td><label for="vendorID">Registration ID:</label></td>
+                            <td><input type="text" id="vendorID" disabled></input></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputBusinessName">Business Name:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputBusinessName"
+                                    placeholder="Business Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputFullName">Owner Name:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputFullName"
+                                    placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uploadValidID">Upload Valid ID:</label></td>
+                            <td><input type="file" class="form-control" id="uploadValidID"
+                                    accept ="image/*" placeholder="Upload ID"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputVEmail">Email</label></td>
+                            <td><input type="email" class="form-control inputBox" id="inputVEmail" placeholder="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputVContact">Contact Number:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputVContact"
+                                    placeholder="Contact Number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="setPassword">Password:</label></td>
+                            <td><input type="Password" class="form-control inputBox" id="setPassword"
+                                    placeholder="Password"></td>
+                        </tr>
+                        <tr>
+                            <td><label> <b>Business Address: </b></label></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputHouseNum">House/Buiding Number:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputHouseNum"
+                                    placeholder="Block and lot"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputStreet">Street:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputStreet"
+                                    placeholder="Street/Subdivision and Phase"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputStreet">Barangay:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputBrgy" placeholder="Barangay">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputStreet">Municipality:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputCity" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputStreet">Province:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputProvince"
+                                    placeholder="Province"></td>
+                        </tr>
+                        <tr>
+                            <td><label> <b>Permits: </b></label></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputPermitNum">Business Permit Number:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputPermitNum"
+                                    placeholder="Business Permit Number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uploadBusinessPermit">Supporting Document:</label></td>
+                            <td><input type="file" class="form-control" id="uploadBusinessPermit"
+                                    accept ="image/*" placeholder="Upload Photo"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputDTIPermit">DTI Permit Number:</label></td>
+                            <td><input type="text" class="form-control inputBox" id="inputDTIPermit"
+                                    placeholder="DTI Permit Number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uploadDTIPermit">Supporting Document:</label></td>
+                            <td><input type="file" class="form-control" id="uploadDTIPermit"
+                                    accept ="image/*" placeholder="Upload Photo"></td>
+                        </tr>
+                    </table>
+                    <br />
+                    <hr>
+                    <br />
+                    <button type="button" class="btnSubmit" onclick="registerVendor()">SUBMIT</button>
+                    <button type="button" class="btnSubmit" onclick="window.location.href='../../';">
+                        CLOSE
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</html>
+
+</html>

@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+ion-item-options {
+    visibility: none;
+}
+
+ion-item-options.hydrated {
+    visibility: visible;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: 0;
+}
+
+:root {
+    /*  ======color======  */
+
+    --color-body: #E4E9F7;
+    --color-side: #FFF;
+    --color-prime: #66FCF1;
+    --color-light: #F6F5FF;
+    --color-toggle: #DDD;
+    --color-text: #021c1a;
+    --color-back: #9eede9;
+    --color-sub: #9eede96f;
+
+
+    /* =====transition====== */
+    --trans-02: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+
+    --spacer: 2rem;
+    --inputBg: #adede5;
+
+}
+
+body {
+    height: 10px;
+    background-color:var(--color-sub);
+}
+
+body.dark {
+    --color-body: #18191A;
+    --color-side: #242526;
+    --color-prime: #3A3B3C;
+    --color-light: #3A3B3C;
+    --color-toggle: #FFF;
+    --color-text: #CCC;
+}

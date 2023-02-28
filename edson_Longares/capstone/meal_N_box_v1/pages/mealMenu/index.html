@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="../../photos/misc/my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--START OF TOP NAV MENU -->
+    <div class=".my-main-Container">
+        <nav class="top-navigation">
+
+            <ul class="nav-list-container">
+                <li class="logo" onclick="history.back()">
+                    <a href="../../"  >
+                    <img src="../../photos/misc/my-icon.ico" height="100px" alt="Image" />
+                    </a>
+                </li>
+                <li class="search-box">
+                    <a href="#">
+                        <i class='bx bx-search icon'></i>
+                        <input type="search" placeholder="Search...">
+                    </a>
+                </li>
+                <li class="nav-links myModal-link my-tray">
+                    <a href="#" class="" data-bs-toggle="modal" data-bs-target="#myTrayModal">
+                        <i class='bx bx-cart icon myModal-link'></i>
+                        <span class="text nav-text">TRAY</span>
+                    </a>
+                </li>
+                <li class="nav-links my-order">
+                    <a href="#">
+                        <i class='bx bx-package icon'></i>
+                        <span class="text nav-text">ORDERS</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="product-list-container">
+            <div class="menu-filters-container">
+                <div class="category-filters">
+                    <span>
+                        <h5>Menu Category: </h5>
+                    </span>
+                    <hr />
+                    <table class="category-option">
+                        <tr>
+                            <td class="categoryCheckbox">
+                                <input class="categoryInputBox" type="checkbox" id="menuCategA" value="false">
+                                <label for="menuCategA">Breakfast</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox">
+                                <input class="categoryInputBox" type="checkbox" id="menuCategB" value="false">
+                                <label for="menuCategB">Lunch</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox">
+                                <input class="categoryInputBox" type="checkbox" id="menuCategC" value="false">
+                                <label for="menuCategC">Dinner</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox"><input class="categoryInputBox" type="checkbox" id="menuCategD"
+                                    value="false">
+                                <label for="menuCategD">Snacks</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="categoryCheckbox">
+                                <input class="categoryInputBox" type="checkbox" id="menuCategE" value="false">
+                                <label for="menuCategE">Desserts</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="product-detail-list">
+                <div class="menu-header">
+                    <br>
+                    <h4>meal-N-Box Menus</h4>
+                    <hr />
+                </div>
+                <div class="meal-menus">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+    integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+<script src="../../js/add-minus.js"></script>
+
+</html>

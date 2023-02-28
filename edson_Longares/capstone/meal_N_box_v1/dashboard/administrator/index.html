@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="../../photos/misc/my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  
+     <!-- DataTable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.2/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css" />
+
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+      <!-- <link href="css/topNav.css" rel="stylesheet"> -->
+    <link href="../../css/sideBar.css" rel="stylesheet">
+     <link href="style.css" rel="stylesheet"> 
+     
+
+</head>
+
+<body>
+<div class="homeContainer container-fluid">
+    <nav class="sideBar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../../photos/misc/my-icon.ico" alt="logo">
+                </span>
+                <div class="text-header text">
+                    <span class="name">meal-N-box</span>
+                    <br />
+                    <span class="user">ADMINISTRATOR</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <a href="#">
+                        <i class='bx bx-search icon' ></i>
+                        <input type="search" placeholder="Search...">
+                    </a>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links active">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' icon></i>
+                            <span class="text nav-text">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bxs-food-menu icon'></i>
+                            <span class="text nav-text">PRODUCTS</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-store icon'></i>
+                            <span class="text nav-text">VENDORS</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="nav-links">
+                    <a href="#">
+                        <i class='bx bx-log-out-circle icon '></i>
+                        <span class="text nav-text">LOGIN</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                    <i class='bx bx-moon icon moon' icon></i>
+                    <i class='bx bx-sun icon sun' icon></i>
+                   </div>
+                   <span class="mood-text text">Dark Mode</span>
+                   <div class="toggle-switch"> 
+                    <span class="switch"></span>
+                   </div>
+                </li>
+            </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="featuredMenu">
+            <div>
+                <h3>FEATURE PRODUCTS</h3>
+                <hr>
+            </div>
+            <table id="records" style="width: 100%;" class="display responsive nowrap cell-border compact stripe">
+                <thead>
+                    <tr>
+                        <!--TODO-->
+                        <th></th>
+                        <th>PRODUCT ID</th>
+                        <th>PRODUCT NAME</th>
+                        <th>PPRICE</th>
+                        <th>PHOTO</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="setFeat-Menu">
+
+                </tbody>
+              </table>
+        </div>
+    </section>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script> 
+
+<!-- DataTable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js
+    "></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.print.min.js
+    "></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
+    "></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
+    <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="../../js/sideBar.js"></script>
+<script src="script.js"></script>
+
+</html>

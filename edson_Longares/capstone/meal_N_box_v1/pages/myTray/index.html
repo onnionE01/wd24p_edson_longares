@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-ico" href="../../photos/misc/my-icon.ico" />
+    <title>MEAL-N-BOX</title>
+
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body onload="loadTray()">
+
+    <div class="reg-container">
+        <div class="subRegContainer">
+            <div class="infoContainer ">
+                <div class="tray-header">
+                    <img src="../../photos/misc/site-logo.png" height="60px" alt="logo" />
+                    <span><h3>ORDER SUMMARY</h3></span>
+                </div>
+                <div class="">
+                    <div class="container text-center vendor-feat">
+                        <div class="row per-row-prod myTray">
+                           
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <label>Total Amount:</label><label name="myoder" id="orderGrandTotal"></label>
+                        <hr>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Note:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btnSubmit" onclick="window.location.href='../../dashboard/customer/';">Close</button>
+                    <button type="button" class="btnSubmit" onclick="orderConfirm()">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<!--for the tiny slider cdnjs.com-->
+
+<script src="script.js"></script>
+<script src="addminus.js"></script>
+
+
+</html>
